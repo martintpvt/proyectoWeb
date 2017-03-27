@@ -2990,3 +2990,544 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 86ms (Views: 80.1ms | ActiveRecord: 4.4ms)
 
 
+Started GET "/" for ::1 at 2017-03-27 13:43:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 2091ms (Views: 2012.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-03-27 13:44:09 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 173ms (Views: 149.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2017-03-27 13:45:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vqxBGNpJVN/nJIF/Vl1EGYw9I43NxoobzuchSUzOp7c2b93DnTina3T3PgFUWK62L6dVsjPo4A1tfVpE2TDJtw==", "email"=>"martin_almeida@outlook.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'martin_almeida@outlook.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 187ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 13:45:07 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 166ms (Views: 147.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:06:37 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (265.5ms)
+Completed 500 Internal Server Error in 340ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users' for #<#<Class:0xa5bd468>:0xa5bc9d0>
+Did you mean?  users_url):
+    1: <div class="col-sm-12">
+    2: 	<% users.each do |key, value| %>
+    3: 		a
+    4: 	<% end %>
+    5: </div>
+  
+app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb___565263926_86895828'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (799.6ms)
+Started GET "/showusers" for ::1 at 2017-03-27 14:08:59 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (22.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 206ms (Views: 170.8ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:09:20 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 147ms (Views: 130.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:09:43 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 151ms (Views: 131.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:09:54 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="col-sm-12">
+    2: 	<% @users.each do |key, value| %>
+    3: 		<%= value.name %>
+    4: 	<% end %>
+    5: </div>
+  
+app/views/users/show.html.erb:3:in `block in _app_views_users_show_html_erb___565263926_81433008'
+app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb___565263926_81433008'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (696.3ms)
+Started GET "/showusers" for ::1 at 2017-03-27 14:12:18 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 159ms (Views: 141.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:12:25 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (23.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 171ms (Views: 153.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:12:38 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (12.7ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 156ms (Views: 134.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:13:34 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 150ms (Views: 128.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:17:38 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 158ms (Views: 139.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:18:20 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 143ms (Views: 125.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:19:02 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 135ms (Views: 119.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/logout" for ::1 at 2017-03-27 14:19:04 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:19:04 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 150ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:19:06 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 145ms (Views: 127.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:26:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 141ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-03-27 14:26:06 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 165ms (Views: 148.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:26:07 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 166ms (Views: 151.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:26:09 -0500
+  
+SyntaxError (C:/Users/Martin/Documents/udla/ingenieria web/Proyecto Web/proyectoWeb/app/controllers/users_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (703.5ms)
+Started GET "/showusers" for ::1 at 2017-03-27 14:26:40 -0500
+Processing by UsersController#show as HTML
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `logged_in' for #<UsersController:0xa309fb0>
+Did you mean?  logged_in?):
+  
+app/controllers/users_controller.rb:28:in `show'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (734.1ms)
+Started GET "/showusers" for ::1 at 2017-03-27 14:27:14 -0500
+Processing by UsersController#show as HTML
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `logged_in' for #<UsersController:0xa174668>
+Did you mean?  logged_in?):
+  
+app/controllers/users_controller.rb:28:in `show'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (755.4ms)
+Started GET "/showusers" for ::1 at 2017-03-27 14:27:23 -0500
+Processing by UsersController#show as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-03-27 14:27:23 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 137ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:27:26 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 148ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:27:27 -0500
+Processing by UsersController#show as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-03-27 14:27:27 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 150ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2017-03-27 14:27:43 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OEj8LrYFOz3i+ukkurw2V2j/h509o2isQyjexdFWUA+wi2D18XTIiXEpVlq4udz4y2XxosONArrgsqXIRKg+Dw==", "email"=>"martin_almeida@outlook.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'martin_almeida@outlook.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:27:43 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 147ms (Views: 128.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 14:27:52 -0500
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 155ms (Views: 132.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 15:20:56 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 221ms (Views: 196.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:20:59 -0500
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (197.5ms)
+Completed 200 OK in 398ms (Views: 372.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:21:15 -0500
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 159ms (Views: 132.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:21:33 -0500
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 165ms (Views: 136.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:22:05 -0500
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 158ms (Views: 136.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:22:12 -0500
+Processing by UsersController#show as HTML
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 174ms (Views: 142.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:23:05 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (53.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 206ms (Views: 148.5ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:23:22 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 156ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:23:48 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 149ms (Views: 131.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:23:59 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 141ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:24:12 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 141ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:25:14 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 162ms (Views: 141.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/showusers" for ::1 at 2017-03-27 15:25:27 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 146ms (Views: 128.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/deleteuser" for ::1 at 2017-03-27 15:26:43 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/deleteuser"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (68.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1060.8ms)
+Started POST "/deleteuser" for ::1 at 2017-03-27 15:27:04 -0500
+Processing by UsersController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bv4u5wS9Ldo2QMJorCXoP0/gDy3HDR4OnVTJDmSie1wcuYx8fyEjaV/ahGOThrXypA+uSwzEd80efv8l6ZpdGA==", "post"=>{"user"=>"1"}, "commit"=>"Delete"}
+  Rendering users/delete.html.erb within layouts/application
+  Rendered users/delete.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 189ms (Views: 169.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/deleteuser" for ::1 at 2017-03-27 15:44:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/deleteuser"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (7.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (934.2ms)
+Started POST "/deleteuser" for ::1 at 2017-03-27 15:45:13 -0500
+Processing by UsersController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bv4u5wS9Ldo2QMJorCXoP0/gDy3HDR4OnVTJDmSie1wcuYx8fyEjaV/ahGOThrXypA+uSwzEd80efv8l6ZpdGA==", "post"=>{"user"=>"1"}, "commit"=>"Delete"}
+  Rendering users/delete.html.erb within layouts/application
+  Rendered users/delete.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 201ms (Views: 173.6ms | ActiveRecord: 9.1ms)
+
+

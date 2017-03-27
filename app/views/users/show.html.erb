@@ -1,3 +1,25 @@
 <div class="col-sm-12">
-	Mostrar
+	<% User.all.collect do |user| %>
+	<div class="col-sm-12">
+		<div class="col-sm-4">
+			<%= user.name %>
+		</div>
+		<div class="col-sm-4">
+			<%= user.lastname %>
+		</div>
+		<div class="col-sm-4">
+			<%= user.email %>
+		</div>
+	</div>
+	<% end %>
+
+	<div class="col-sm-12">
+		<%= form_tag deleteuser_path do %>
+			<div class="form-group">
+			<%= label_tag :user %>
+			<%= select(:post, "user", User.all.collect {|user| [ user.name + ' ' + user.lastname, user.id ] }, {include_blank: false}, class: "form-control") %>
+			</div>
+			<div class="actions"><%= submit_tag "Delete", class: "btn btn-default" %></div>
+		<% end %>
+	</div>
 </div>

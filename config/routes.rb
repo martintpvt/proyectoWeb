@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 	get 'signup', to: 'users#new', as: 'signup'
 	get 'showusers', to: 'users#show', as: 'showusers'
 	get 'updateuser', to: 'users#update', as: 'updateuser'
-	get 'deleteuser', to: 'users#delete', as: 'deleteuser'
+	post 'deleteuser', to: 'users#delete', as: 'deleteuser'
 
 	get 'login', to: 'sessions#new', as: 'login'
 	get 'logout', to: 'sessions#destroy', as: 'logout'
