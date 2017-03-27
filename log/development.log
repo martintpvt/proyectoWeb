@@ -2362,3 +2362,33 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 139ms (Views: 121.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-03-27 11:23:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (6.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 7486ms (Views: 7394.9ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 11:23:51 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 200ms (Views: 177.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/logout" for ::1 at 2017-03-27 11:24:08 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 11:24:08 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 187ms (Views: 169.7ms | ActiveRecord: 0.0ms)
+
+
