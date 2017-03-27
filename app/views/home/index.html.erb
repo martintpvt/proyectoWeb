@@ -1,0 +1,7 @@
+<div class="col-sm-12">
+	<% if logged_in? %>
+		<%= 'Bienvenido ' + session[:username] %>
+	<% else %>
+		<%= 'Usted no ha ingresado al sistema.' %>      
+	<% end %>
+</div>

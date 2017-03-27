@@ -1,0 +1,61 @@
+<div class="col-sm-12">
+  <h1>Sign Up</h1>
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control", placeholder: "Name", autofocus: "true" %>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :lastname %>
+      <%= f.text_field :lastname, class: "form-control", placeholder: "Lastname" %>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :username %>
+      <%= f.text_field :username, class: "form-control", placeholder: "Username" %>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: "form-control", placeholder: "Email" %>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm Password" %>
+    </div>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="actions"><%= f.submit "Sign Up", class: "btn btn-default" %></div>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ProyectoWeb</title>
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+		<%= evil_icons_sprite %>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="<%= root_url %>">Proyecto Web</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="<%= root_url %>">Home</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="<%= signup_path %>">Crear</a></li>
+						<li><a href="<%= showusers_path %>">Mostrar</a></li>
+						<li><a href="<%= updateuser_path %>">Actualizar</a></li>
+						<li><a href="<%= deleteuser_path %>">Eliminar</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a class="dropdown-toggle lista-menu" data-toggle="dropdown" href="#">
+						<%= evil_icon 'ei-user', size: :s %>
+						<p class="pull-right texto-menu-usuario">
+							<% if logged_in? %>
+								<%= session[:name] + ' ' + session[:lastname] %>
+							<% else %>
+								Usuario   
+							<% end %>
+							<span class="caret"></span>
+						</p>
+					</a>
+					<ul class="dropdown-menu">
+						<% if logged_in? %>
+							<li><a href="<%= logout_path %>">Logout</a></li>
+						<% else %>
+							<li><a href="<%= signup_path %>">Sign Up</a></li>
+							<li><a href="<%= login_path %>">Login</a></li>       
+						<% end %>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</nav>
+
+		<div class="jumbotron text-center">
+			<h1>Proyecto Web</h1>
+			<p>Martín Almeida</p>
+		</div>
+
+		<div class="container">
+			<%= yield %>
+		</div>
+	</body>
+</html>
