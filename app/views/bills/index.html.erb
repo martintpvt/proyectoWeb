@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bills</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id factura</th>
+      <th>Id entidad</th>
+      <th>Id cliente</th>
+      <th>Numerofactura</th>
+      <th>Fechaemision</th>
+      <th>Emitidarecibida</th>
+      <th>Incluyeiva</th>
+      <th>Descuento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bills.each do |bill| %>
+      <tr>
+        <td><%= bill.Id_Factura %></td>
+        <td><%= bill.Id_Entidad %></td>
+        <td><%= bill.Id_Cliente %></td>
+        <td><%= bill.NumeroFactura %></td>
+        <td><%= bill.FechaEmision %></td>
+        <td><%= bill.EmitidaRecibida %></td>
+        <td><%= bill.IncluyeIva %></td>
+        <td><%= bill.Descuento %></td>
+        <td><%= link_to 'Show', bill %></td>
+        <td><%= link_to 'Edit', edit_bill_path(bill) %></td>
+        <td><%= link_to 'Destroy', bill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bill', new_bill_path %>

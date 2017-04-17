@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id detalle</th>
+      <th>Id factura</th>
+      <th>Descripcion</th>
+      <th>Valorunitario</th>
+      <th>Cantidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @details.each do |detail| %>
+      <tr>
+        <td><%= detail.Id_Detalle %></td>
+        <td><%= detail.Id_Factura %></td>
+        <td><%= detail.Descripcion %></td>
+        <td><%= detail.ValorUnitario %></td>
+        <td><%= detail.Cantidad %></td>
+        <td><%= link_to 'Show', detail %></td>
+        <td><%= link_to 'Edit', edit_detail_path(detail) %></td>
+        <td><%= link_to 'Destroy', detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Detail', new_detail_path %>

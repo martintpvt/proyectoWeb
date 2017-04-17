@@ -1,0 +1,52 @@
+<%= form_for(bill) do |f| %>
+  <% if bill.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bill.errors.count, "error") %> prohibited this bill from being saved:</h2>
+
+      <ul>
+      <% bill.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Id_Entidad %>
+    <%= f.select :Id_Entidad,  options_from_collection_for_select(Entity.all, :Id_Entidad, :Nombre) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Id_Cliente %>
+    <%= f.select :Id_Cliente,  options_from_collection_for_select(Entity.all, :Id_Entidad, :Nombre) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :NumeroFactura %>
+    <%= f.text_field :NumeroFactura %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FechaEmision %>
+    <%= f.date_select :FechaEmision %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Emitida" %>
+    <%= f.check_box :EmitidaRecibida %>
+  </div>
+
+  <div class="field">
+    <%= f.label :IncluyeIva %>
+    <%= f.check_box :IncluyeIva %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Descuento %>
+    <%= f.text_field :Descuento, step: :any %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

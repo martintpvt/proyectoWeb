@@ -55,6 +55,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    composite_primary_keys (9.0.6)
+      activerecord (~> 5.0.0)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.2)
     erubis (2.7.0)
@@ -160,6 +162,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.2)
+  composite_primary_keys
   evil_icons
   jbuilder (~> 2.5)
   jquery-rails

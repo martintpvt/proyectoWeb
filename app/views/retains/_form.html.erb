@@ -1,0 +1,32 @@
+<%= form_for(retain) do |f| %>
+  <% if retain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(retain.errors.count, "error") %> prohibited this retain from being saved:</h2>
+
+      <ul>
+      <% retain.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Id_Factura %>
+    <%= f.select :Id_Factura,  options_from_collection_for_select(Bill.all, :Id_Factura, :Id_Factura) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Id_Retencion %>
+    <%= f.select :Id_Retencion,  options_from_collection_for_select(Retention.all, :Id_Retencion, :Id_Retencion) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PorcentajeRetencion %>
+    <%= f.number_field :PorcentajeRetencion, step: :any %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -3531,3 +3531,1607 @@ Processing by UsersController#delete as HTML
 Completed 200 OK in 201ms (Views: 173.6ms | ActiveRecord: 9.1ms)
 
 
+Started GET "/" for ::1 at 2017-04-16 09:15:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (10.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 2197ms (Views: 2115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2017-04-16 09:16:17 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (325.4ms)
+Completed 200 OK in 581ms (Views: 512.0ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/showusers" for ::1 at 2017-04-16 09:16:19 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 219ms (Views: 176.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/updateuser" for ::1 at 2017-04-16 09:16:25 -0500
+Processing by UsersController#update as HTML
+  Rendering users/update.html.erb within layouts/application
+  Rendered users/update.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 173ms (Views: 150.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/deleteuser" for ::1 at 2017-04-16 09:16:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/deleteuser"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (35.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1182.0ms)
+Started GET "/updateuser" for ::1 at 2017-04-16 09:16:32 -0500
+Processing by UsersController#update as HTML
+  Rendering users/update.html.erb within layouts/application
+  Rendered users/update.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 146ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (26.8ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (607.1ms)[0m  [1m[35mCREATE TABLE `entidades` (`id` int AUTO_INCREMENT PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (8.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416153513')[0m
+  [1m[35m (48.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (99.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `entidades`[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (298.8ms)[0m  [1m[35mDROP TABLE `entidades`[0m
+  [1m[35mSQL (39.4ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20170416153513'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (243.2ms)[0m  [1m[35mCREATE TABLE `entidades` (`Id_Entidad` int AUTO_INCREMENT PRIMARY KEY, `Id_Usuario` int, `Identificacion` varchar(255), `Nombre` varchar(255), `Telefono` varchar(255), `Direccion` varchar(255), `Email` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416153513')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `entidades`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entidades'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (166.5ms)[0m  [1m[35mDROP TABLE `entidades`[0m
+  [1m[35mSQL (35.0ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20170416153513'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (221.7ms)[0m  [1m[35mCREATE TABLE `entidades` (`Id_Entidad` int AUTO_INCREMENT PRIMARY KEY, `Id_Usuario` int NOT NULL, `Identificacion` varchar(255) NOT NULL, `Nombre` varchar(255) NOT NULL, `Telefono` varchar(255) NOT NULL, `Direccion` varchar(255) NOT NULL, `Email` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416153513')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFactura (20170416195709)
+  [1m[35m (226.5ms)[0m  [1m[35mCREATE TABLE `facturas` (`Id_Factura` int AUTO_INCREMENT PRIMARY KEY, `Id_Entidad` int NOT NULL, `Id_Cliente` int NOT NULL, `NumeroFactura` varchar(255) NOT NULL, `FechaEmision` date NOT NULL, `EmitidaRecibida` tinyint(1) NOT NULL, `IncluyeIva` tinyint(1) NOT NULL, `Descuento` float NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416195709')[0m
+  [1m[35m (41.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `entidades`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entidades'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `facturas`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'facturas'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateDetalle (20170416200337)
+  [1m[35m (362.4ms)[0m  [1m[35mCREATE TABLE `detalles` (`Id_Detalle` int AUTO_INCREMENT PRIMARY KEY, `Id_Factura` int NOT NULL, `Descripcion` varchar(255) NOT NULL, `ValorUnitario` float NOT NULL, `Cantidad` int NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416200337')[0m
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `detalles`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'detalles'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `entidades`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entidades'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `facturas`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'facturas'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateDetalle (20170416200337)
+  [1m[35m (163.3ms)[0m  [1m[35mDROP TABLE `detalles`[0m
+  [1m[35mSQL (51.5ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20170416200337'[0m
+Migrating to CreateFactura (20170416195709)
+  [1m[35m (186.7ms)[0m  [1m[35mDROP TABLE `facturas`[0m
+  [1m[35mSQL (69.8ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20170416195709'[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (127.1ms)[0m  [1m[35mDROP TABLE `entidades`[0m
+  [1m[35mSQL (26.8ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20170416153513'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidades (20170416153513)
+  [1m[35m (336.3ms)[0m  [1m[35mCREATE TABLE `entidad` (`Id_Entidad` int AUTO_INCREMENT PRIMARY KEY, `Id_Usuario` int NOT NULL, `Identificacion` varchar(255) NOT NULL, `Nombre` varchar(255) NOT NULL, `Telefono` varchar(255) NOT NULL, `Direccion` varchar(255) NOT NULL, `Email` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (29.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416153513')[0m
+  [1m[35m (59.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFactura (20170416195709)
+  [1m[35m (706.8ms)[0m  [1m[35mCREATE TABLE `factura` (`Id_Factura` int AUTO_INCREMENT PRIMARY KEY, `Id_Entidad` int NOT NULL, `Id_Cliente` int NOT NULL, `NumeroFactura` varchar(255) NOT NULL, `FechaEmision` date NOT NULL, `EmitidaRecibida` tinyint(1) NOT NULL, `IncluyeIva` tinyint(1) NOT NULL, `Descuento` float NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416195709')[0m
+  [1m[35m (64.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDetalle (20170416200337)
+  [1m[35m (360.1ms)[0m  [1m[35mCREATE TABLE `detalle` (`Id_Detalle` int AUTO_INCREMENT PRIMARY KEY, `Id_Factura` int NOT NULL, `Descripcion` varchar(255) NOT NULL, `ValorUnitario` float NOT NULL, `Cantidad` int NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416200337')[0m
+  [1m[35m (25.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRetencion (20170416223648)
+  [1m[35m (285.6ms)[0m  [1m[35mCREATE TABLE `retencion` (`Id_Retencion` int AUTO_INCREMENT PRIMARY KEY, `NumeroRetencion` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416223648')[0m
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRetencionfactura (20170416223820)
+  [1m[35m (251.7ms)[0m  [1m[35mCREATE TABLE `retencionfactura` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (516.2ms)[0m  [1m[35malter table retencionfactura add primary key(Id_Factura, Id_Retencion)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416223820')[0m
+  [1m[35m (22.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `detalle`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'detalle'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `entidad`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entidad'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `factura`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'factura'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `retencion`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'retencion'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `retencionfactura`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateImpuesto (20170416225240)
+  [1m[35m (410.7ms)[0m  [1m[35mCREATE TABLE `impuesto` (`Id_Impuesto` int AUTO_INCREMENT PRIMARY KEY, `NombreImpuesto` varchar(255) NOT NULL, `PorcentajeImpuesto` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416225240')[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEntidadimpuesto (20170416225443)
+  [1m[35m (251.5ms)[0m  [1m[35mCREATE TABLE `entidadimpuesto` (`Id_Entidad` int NOT NULL, `Id_Impuesto` int NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (457.9ms)[0m  [1m[35malter table entidadimpuesto add primary key(Id_Entidad, Id_Impuesto)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416225443')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `detalle`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'detalle'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `entidad`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entidad'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `entidadimpuesto`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `factura`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'factura'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `impuesto`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'impuesto'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `retencion`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'retencion'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `retencionfactura`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntidadimpuesto (20170416225443)
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntities (20170416231401)
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE `entities` (`id` int AUTO_INCREMENT PRIMARY KEY, `Id_Entidad` int AUTO_INCREMENT PRIMARY KEY, `Id_Usuario` int NOT NULL, `Identificacion` varchar(255) NOT NULL, `Nombre` varchar(255) NOT NULL, `Telefono` varchar(255) NOT NULL, `Direccion` varchar(255) NOT NULL, `Email` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntities (20170416231401)
+  [1m[35m (256.0ms)[0m  [1m[35mCREATE TABLE `entities` (`Id_Entidad` int AUTO_INCREMENT PRIMARY KEY, `Id_Usuario` int NOT NULL, `Identificacion` varchar(255) NOT NULL, `Nombre` varchar(255) NOT NULL, `Telefono` varchar(255) NOT NULL, `Direccion` varchar(255) NOT NULL, `Email` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416231401')[0m
+  [1m[35m (34.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBills (20170416231537)
+  [1m[35m (227.9ms)[0m  [1m[35mCREATE TABLE `bills` (`Id_Factura` int AUTO_INCREMENT PRIMARY KEY, `Id_Entidad` int NOT NULL, `Id_Cliente` int NOT NULL, `NumeroFactura` varchar(255) NOT NULL, `FechaEmision` date NOT NULL, `EmitidaRecibida` tinyint(1) NOT NULL, `IncluyeIva` tinyint(1) NOT NULL, `Descuento` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416231537')[0m
+  [1m[35m (36.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDetails (20170416233509)
+  [1m[35m (311.2ms)[0m  [1m[35mCREATE TABLE `details` (`Id_Detalle` int AUTO_INCREMENT PRIMARY KEY, `Id_Factura` int NOT NULL, `Descripcion` varchar(255) NOT NULL, `ValorUnitario` float NOT NULL, `Cantidad` int NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416233509')[0m
+  [1m[35m (66.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRetentions (20170416233715)
+  [1m[35m (302.2ms)[0m  [1m[35mCREATE TABLE `retentions` (`Id_Retencion` int AUTO_INCREMENT PRIMARY KEY, `NumeroRetencion` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416233715')[0m
+  [1m[35m (25.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTaxes (20170416233800)
+  [1m[35m (235.1ms)[0m  [1m[35mCREATE TABLE `taxes` (`Id_Impuesto` int AUTO_INCREMENT PRIMARY KEY, `NombreImpuesto` varchar(255) NOT NULL, `PorcentajeImpuesto` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416233800')[0m
+  [1m[35m (40.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRetains (20170416234400)
+  [1m[35m (343.2ms)[0m  [1m[35mCREATE TABLE `retains` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.5ms)[0m  [1m[35malter table retencionfactura add primary key(Id_Factura, Id_Retencion)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateRetains (20170416234400)
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE `retains` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateRetains (20170416234400)
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE `retains` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateRetains (20170416234400)
+  [1m[35m (343.2ms)[0m  [1m[35mCREATE TABLE `retains` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.5ms)[0m  [1m[35malter table ratains add primary key(Id_Factura, Id_Retencion)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK('2744249206070082795', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateRetains (20170416234400)
+  [1m[35m (241.5ms)[0m  [1m[35mCREATE TABLE `retains` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (457.6ms)[0m  [1m[35malter table retains add primary key(Id_Factura, Id_Retencion)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416234400')[0m
+  [1m[35m (96.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateApplies (20170416234459)
+  [1m[35m (543.9ms)[0m  [1m[35mCREATE TABLE `applies` (`Id_Entidad` int NOT NULL, `Id_Impuesto` int NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (523.0ms)[0m  [1m[35malter table applies add primary key(Id_Entidad, Id_Impuesto)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416234459')[0m
+  [1m[35m (31.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (59.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('2744249206070082795')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `applies`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `bills`[0m
+  [1m[35m (14.8ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'bills'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `details`[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'details'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `entities`[0m
+  [1m[35m (11.0ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entities'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `retains`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `retentions`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'retentions'[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSHOW CREATE TABLE `taxes`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'taxes'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (21.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+Started GET "/" for ::1 at 2017-04-16 19:04:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6792ms (Views: 6768.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 19:04:23 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 206ms (Views: 188.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-04-16 19:04:30 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 210ms (Views: 182.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2017-04-16 19:04:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zHAl+FD/At0tjynAhOzvuwjyVLebf2/MkFm5pjjFvRczBwxJu70KOAeH+ocqf5yMY4ibZsBrcwTpSqDiZ+dz6w==", "email"=>"martin_almeida@outlook.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'martin_almeida@outlook.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 193ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 19:04:48 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 213ms (Views: 196.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 19:05:13 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 199ms (Views: 167.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 19:05:42 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 199ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 19:05:45 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 191ms (Views: 164.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:06:01 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  Rendered entities/_form.html.erb (17.5ms)
+  Rendered entities/new.html.erb within layouts/application (33.1ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 249ms (Views: 224.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 19:07:20 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 208ms (Views: 181.9ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 19:07:21 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (11.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 191ms (Views: 164.0ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:07:22 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  Rendered entities/_form.html.erb (3.5ms)
+  Rendered entities/new.html.erb within layouts/application (19.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 210ms (Views: 186.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:17:55 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  Rendered entities/_form.html.erb (2.5ms)
+  Rendered entities/new.html.erb within layouts/application (18.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 194ms (Views: 176.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:22:11 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  Rendered entities/_form.html.erb (17.0ms)
+  Rendered entities/new.html.erb within layouts/application (32.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+    13: 
+    14:   <div class="field">
+    15: 
+    16:     <% options = options_from_collection_for_select(@users, 'id', 'name') %>
+    17:     <%= f.select :all_val,  options %>
+    18: 
+    19:   </div>
+  
+app/views/entities/_form.html.erb:16:in `block in _app_views_entities__form_html_erb___1068049314_99553536'
+app/views/entities/_form.html.erb:1:in `_app_views_entities__form_html_erb___1068049314_99553536'
+app/views/entities/new.html.erb:3:in `_app_views_entities_new_html_erb___330350156_100834152'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (874.3ms)
+Started GET "/entities/new" for ::1 at 2017-04-16 19:23:46 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (33.6ms)
+  Rendered entities/new.html.erb within layouts/application (48.6ms)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 20.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all_val' for #<Entity:0xb7682c8>):
+    14:   <div class="field">
+    15: 
+    16:     <% options = options_from_collection_for_select(@users, 'id', 'name') %>
+    17:     <%= f.select :all_val,  options %>
+    18: 
+    19:     <%= f.label :Id_Usuario %>
+    20:     <%= f.number_field :Id_Usuario %>
+  
+app/views/entities/_form.html.erb:17:in `block in _app_views_entities__form_html_erb___1068049314_95682648'
+app/views/entities/_form.html.erb:1:in `_app_views_entities__form_html_erb___1068049314_95682648'
+app/views/entities/new.html.erb:3:in `_app_views_entities_new_html_erb___330350156_95703120'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (688.6ms)
+Started GET "/entities/new" for ::1 at 2017-04-16 19:31:36 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  Rendered entities/_form.html.erb (17.5ms)
+  Rendered entities/new.html.erb within layouts/application (33.0ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+    13: 
+    14:   <div class="field">
+    15: 
+    16:     <% options = options_from_collection_for_select(@users, 'id', 'name') %>
+    17:     <%= f.select :Id_Usuario,  options %>
+    18: 
+    19:     <%= f.label :Id_Usuario %>
+  
+app/views/entities/_form.html.erb:16:in `block in _app_views_entities__form_html_erb___1068049314_87624168'
+app/views/entities/_form.html.erb:1:in `_app_views_entities__form_html_erb___1068049314_87624168'
+app/views/entities/new.html.erb:3:in `_app_views_entities_new_html_erb___330350156_87644772'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (725.5ms)
+Started GET "/entities/new" for ::1 at 2017-04-16 19:32:11 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (9.0ms)
+  Rendered entities/new.html.erb within layouts/application (25.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 244ms (Views: 215.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:32:42 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (4.5ms)
+  Rendered entities/new.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 208ms (Views: 188.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:32:52 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (26.3ms)
+  Rendered entities/new.html.erb within layouts/application (41.3ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name lastname' for #<User:0xba11f28>
+Did you mean?  name_was):
+    15: 
+    16:     <%= f.label :Id_Usuario %>
+    17: 
+    18:     <% options = options_from_collection_for_select(@users, 'id', 'name lastname') %>
+    19:     <%= f.select :Id_Usuario,  options %>
+    20: 
+    21:     
+  
+app/views/entities/_form.html.erb:18:in `block in _app_views_entities__form_html_erb___1068049314_98854740'
+app/views/entities/_form.html.erb:1:in `_app_views_entities__form_html_erb___1068049314_98854740'
+app/views/entities/new.html.erb:3:in `_app_views_entities_new_html_erb___330350156_98891352'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (695.5ms)
+Started GET "/entities/new" for ::1 at 2017-04-16 19:37:22 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (12.5ms)
+  Rendered entities/new.html.erb within layouts/application (43.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 244ms (Views: 218.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 19:37:37 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (4.0ms)
+  Rendered entities/new.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 193ms (Views: 177.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/entities" for ::1 at 2017-04-16 19:40:08 -0500
+Processing by EntitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVGpDrYb6X5XQteuGLG4eeaYBCo8q6R4RTyf8PGwDKwnMpF87Dft8PwR+U3DLM/5WaJkLaXi3Xo4cuCLqxn27A==", "entity"=>{"Id_Usuario"=>"1", "Identificacion"=>"1718947706001", "Nombre"=>"Martin y Asociados", "Telefono"=>"0996543240", "Direccion"=>"De los Carrisos N3-449", "Email"=>"martin.almeida@udla.edu.ec"}, "commit"=>"Create Entity"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (20.7ms)[0m  [1m[32mINSERT INTO `entities` (`Id_Usuario`, `Identificacion`, `Nombre`, `Telefono`, `Direccion`, `Email`, `created_at`, `updated_at`) VALUES (1, '1718947706001', 'Martin y Asociados', '0996543240', 'De los Carrisos N3-449', 'martin.almeida@udla.edu.ec', '2017-04-17 00:40:08', '2017-04-17 00:40:08')[0m
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/entities/1
+Completed 302 Found in 86ms (ActiveRecord: 61.6ms)
+
+
+Started GET "/entities/1" for ::1 at 2017-04-16 19:40:08 -0500
+Processing by EntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 1 LIMIT 1[0m
+  Rendering entities/show.html.erb within layouts/application
+  Rendered entities/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 198ms (Views: 178.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 19:40:58 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 190ms (Views: 170.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/1" for ::1 at 2017-04-16 19:41:05 -0500
+Processing by EntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 1 LIMIT 1[0m
+  Rendering entities/show.html.erb within layouts/application
+  Rendered entities/show.html.erb within layouts/application (8.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 188ms (Views: 167.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 19:41:06 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 188ms (Views: 168.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 20:27:45 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 179ms (Views: 161.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 20:29:22 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 200ms (Views: 181.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 20:29:22 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.0ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (24.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 206ms (Views: 165.5ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/taxes/new" for ::1 at 2017-04-16 20:30:08 -0500
+Processing by TaxesController#new as HTML
+  Rendering taxes/new.html.erb within layouts/application
+  Rendered taxes/_form.html.erb (2.5ms)
+  Rendered taxes/new.html.erb within layouts/application (19.8ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 197ms (Views: 178.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/taxes/new" for ::1 at 2017-04-16 20:30:44 -0500
+Processing by TaxesController#new as HTML
+  Rendering taxes/new.html.erb within layouts/application
+  Rendered taxes/_form.html.erb (2.5ms)
+  Rendered taxes/new.html.erb within layouts/application (17.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 222ms (Views: 183.9ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/taxes/new" for ::1 at 2017-04-16 20:37:37 -0500
+Processing by TaxesController#new as HTML
+  Rendering taxes/new.html.erb within layouts/application
+  Rendered taxes/_form.html.erb (2.0ms)
+  Rendered taxes/new.html.erb within layouts/application (17.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 207ms (Views: 187.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/taxes" for ::1 at 2017-04-16 20:41:45 -0500
+Processing by TaxesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3cfspY6RdT5iVV9w8mwQQ63J4WPwHpjtqXhYwSx0OfW3pNTX1L1xsMkGcZMp8WfDEvOBZGlX4e/UNie6dt3DtQ==", "tax"=>{"NombreImpuesto"=>"IVA", "PorcentajeImpuesto"=>"14"}, "commit"=>"Create Tax"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (68.8ms)[0m  [1m[32mINSERT INTO `taxes` (`NombreImpuesto`, `PorcentajeImpuesto`, `created_at`, `updated_at`) VALUES ('IVA', 14.0, '2017-04-17 01:41:45', '2017-04-17 01:41:45')[0m
+  [1m[35m (31.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/taxes/1
+Completed 302 Found in 111ms (ActiveRecord: 100.9ms)
+
+
+Started GET "/taxes/1" for ::1 at 2017-04-16 20:41:45 -0500
+Processing by TaxesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTax Load (0.5ms)[0m  [1m[34mSELECT  `taxes`.* FROM `taxes` WHERE `taxes`.`Id_Impuesto` = 1 LIMIT 1[0m
+  Rendering taxes/show.html.erb within layouts/application
+  Rendered taxes/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 205ms (Views: 168.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 20:41:48 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.0ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 181ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 20:42:52 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (14.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 194ms (Views: 161.3ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/bills/new" for ::1 at 2017-04-16 20:42:54 -0500
+Processing by BillsController#new as HTML
+  Rendering bills/new.html.erb within layouts/application
+  Rendered bills/_form.html.erb (54.4ms)
+  Rendered bills/new.html.erb within layouts/application (70.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 283ms (Views: 259.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/bills/new" for ::1 at 2017-04-16 20:59:42 -0500
+Processing by BillsController#new as HTML
+  Rendering bills/new.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered bills/_form.html.erb (23.0ms)
+  Rendered bills/new.html.erb within layouts/application (39.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 218ms (Views: 192.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:03:19 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 182ms (Views: 165.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 21:03:22 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (4.5ms)
+  Rendered entities/new.html.erb within layouts/application (20.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 207ms (Views: 190.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/entities" for ::1 at 2017-04-16 21:07:30 -0500
+Processing by EntitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RISgiefHNoKy4kSBxKsz6WJZfl0ty2iZEal52CQmp8+Zad3TH6sSwliRKRjZXQZAGLNjjZjeVLbimciaMDmIUw==", "entity"=>{"Id_Usuario"=>"2", "Identificacion"=>"1792207673001", "Nombre"=>"Proventechno", "Telefono"=>"2787836", "Direccion"=>"De los Carrisos N3-449", "Email"=>"montse.gachet@hotmail.com"}, "commit"=>"Create Entity"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.9ms)[0m  [1m[32mINSERT INTO `entities` (`Id_Usuario`, `Identificacion`, `Nombre`, `Telefono`, `Direccion`, `Email`, `created_at`, `updated_at`) VALUES (2, '1792207673001', 'Proventechno', '2787836', 'De los Carrisos N3-449', 'montse.gachet@hotmail.com', '2017-04-17 02:07:30', '2017-04-17 02:07:30')[0m
+  [1m[35m (81.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/entities/2
+Completed 302 Found in 109ms (ActiveRecord: 99.2ms)
+
+
+Started GET "/entities/2" for ::1 at 2017-04-16 21:07:30 -0500
+Processing by EntitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 2 LIMIT 1[0m
+  Rendering entities/show.html.erb within layouts/application
+  Rendered entities/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 189ms (Views: 166.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:07:34 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 185ms (Views: 167.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 21:07:39 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (4.5ms)
+  Rendered entities/new.html.erb within layouts/application (21.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 206ms (Views: 187.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entities/new" for ::1 at 2017-04-16 21:10:41 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (9.5ms)
+  Rendered entities/new.html.erb within layouts/application (25.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 215ms (Views: 192.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/entities" for ::1 at 2017-04-16 21:11:06 -0500
+Processing by EntitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yvwIXWXRFfbZiOvPMEabN2Q/LPgrTZ4OyVARQUByWuJSMhTL7tA2XA1DUznXG3sYqqctHnkT3pGaz8+X6gzKw==", "entity"=>{"Id_Usuario"=>"1", "Identificacion"=>"1792207653001", "Nombre"=>"Entidad x", "Telefono"=>"2457954", "Direccion"=>"6 de Diciembre", "Email"=>"mnalmeida@udlanet.ec"}, "commit"=>"Create Entity"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.1ms)[0m  [1m[32mINSERT INTO `entities` (`Id_Usuario`, `Identificacion`, `Nombre`, `Telefono`, `Direccion`, `Email`, `created_at`, `updated_at`) VALUES (1, '1792207653001', 'Entidad x', '2457954', '6 de Diciembre', 'mnalmeida@udlanet.ec', '2017-04-17 02:11:06', '2017-04-17 02:11:06')[0m
+  [1m[35m (58.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/entities/3
+Completed 302 Found in 91ms (ActiveRecord: 83.3ms)
+
+
+Started GET "/entities/3" for ::1 at 2017-04-16 21:11:06 -0500
+Processing by EntitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 3 LIMIT 1[0m
+  Rendering entities/show.html.erb within layouts/application
+  Rendered entities/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 187ms (Views: 165.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:11:09 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 184ms (Views: 167.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 21:11:13 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.0ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 179ms (Views: 162.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:11:14 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 185ms (Views: 167.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills/new" for ::1 at 2017-04-16 21:11:16 -0500
+Processing by BillsController#new as HTML
+  Rendering bills/new.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered bills/_form.html.erb (6.5ms)
+  Rendered bills/new.html.erb within layouts/application (22.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 195ms (Views: 177.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/bills" for ::1 at 2017-04-16 21:12:57 -0500
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZtFueZ9xXp2bJJqcDSLkflCXoYzx311fnqOGHa5j2E855g+0k70Ug+vqGzxGw5DWbT2uQLFzxHwslQY1oah51A==", "bill"=>{"Id_Entidad"=>"2", "Id_Cliente"=>"3", "NumeroFactura"=>"045", "FechaEmision(1i)"=>"2014", "FechaEmision(2i)"=>"2", "FechaEmision(3i)"=>"25", "EmitidaRecibida"=>"1", "IncluyeIva"=>"1", "Descuento"=>"0"}, "commit"=>"Create Bill"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.1ms)[0m  [1m[32mINSERT INTO `bills` (`Id_Entidad`, `Id_Cliente`, `NumeroFactura`, `FechaEmision`, `EmitidaRecibida`, `IncluyeIva`, `Descuento`, `created_at`, `updated_at`) VALUES (2, 3, '045', '2014-02-25', 1, 1, 0.0, '2017-04-17 02:12:57', '2017-04-17 02:12:57')[0m
+  [1m[35m (81.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/bills/1
+Completed 302 Found in 107ms (ActiveRecord: 98.5ms)
+
+
+Started GET "/bills/1" for ::1 at 2017-04-16 21:12:57 -0500
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT  `bills`.* FROM `bills` WHERE `bills`.`Id_Factura` = 1 LIMIT 1[0m
+  Rendering bills/show.html.erb within layouts/application
+  Rendered bills/show.html.erb within layouts/application (16.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 210ms (Views: 182.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:13:00 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 183ms (Views: 163.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 21:14:11 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.5ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 190ms (Views: 169.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:14:12 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (16.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 192ms (Views: 164.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:14:13 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (11.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 194ms (Views: 166.3ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:14:14 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 211ms (Views: 190.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:14:15 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.0ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 184ms (Views: 163.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details/new" for ::1 at 2017-04-16 21:14:16 -0500
+Processing by DetailsController#new as HTML
+  Rendering details/new.html.erb within layouts/application
+  Rendered details/_form.html.erb (3.0ms)
+  Rendered details/new.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 210ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:18:07 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 187ms (Views: 165.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:18:09 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.0ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 199ms (Views: 178.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:18:32 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 190ms (Views: 168.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:18:34 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 191ms (Views: 170.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details/new" for ::1 at 2017-04-16 21:18:35 -0500
+Processing by DetailsController#new as HTML
+  Rendering details/new.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered details/_form.html.erb (3.1ms)
+  Rendered details/new.html.erb within layouts/application (20.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 208ms (Views: 188.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details/new" for ::1 at 2017-04-16 21:18:42 -0500
+Processing by DetailsController#new as HTML
+  Rendering details/new.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered details/_form.html.erb (3.5ms)
+  Rendered details/new.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 195ms (Views: 178.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/details" for ::1 at 2017-04-16 21:18:56 -0500
+Processing by DetailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u0p0yJxi7+96YH20pm46AWiNGiPX0B9zUdNuWnOUqcDRKUy6xk7rYdEzU1d9802B17d6JE6ZZnEsnREhKT1TgA==", "detail"=>{"Id_Factura"=>"1", "Descripcion"=>"Computadora", "ValorUnitario"=>"1524.62", "Cantidad"=>"3"}, "commit"=>"Create Detail"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (17.6ms)[0m  [1m[32mINSERT INTO `details` (`Id_Factura`, `Descripcion`, `ValorUnitario`, `Cantidad`, `created_at`, `updated_at`) VALUES (1, 'Computadora', 1524.62, 3, '2017-04-17 02:18:57', '2017-04-17 02:18:57')[0m
+  [1m[35m (81.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/details/1
+Completed 302 Found in 108ms (ActiveRecord: 98.8ms)
+
+
+Started GET "/details/1" for ::1 at 2017-04-16 21:18:57 -0500
+Processing by DetailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDetail Load (0.0ms)[0m  [1m[34mSELECT  `details`.* FROM `details` WHERE `details`.`Id_Detalle` = 1 LIMIT 1[0m
+  Rendering details/show.html.erb within layouts/application
+  Rendered details/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 183ms (Views: 160.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details/1/edit" for ::1 at 2017-04-16 21:18:59 -0500
+Processing by DetailsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT  `details`.* FROM `details` WHERE `details`.`Id_Detalle` = 1 LIMIT 1[0m
+  Rendering details/edit.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered details/_form.html.erb (4.0ms)
+  Rendered details/edit.html.erb within layouts/application (22.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 202ms (Views: 180.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:19:01 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.0ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 189ms (Views: 169.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details/new" for ::1 at 2017-04-16 21:19:03 -0500
+Processing by DetailsController#new as HTML
+  Rendering details/new.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered details/_form.html.erb (4.0ms)
+  Rendered details/new.html.erb within layouts/application (20.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 243ms (Views: 224.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:19:04 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 193ms (Views: 175.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:19:12 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 183ms (Views: 163.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:19:13 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (11.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 195ms (Views: 166.6ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/retentions/new" for ::1 at 2017-04-16 21:21:13 -0500
+Processing by RetentionsController#new as HTML
+  Rendering retentions/new.html.erb within layouts/application
+  Rendered retentions/_form.html.erb (2.0ms)
+  Rendered retentions/new.html.erb within layouts/application (20.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 207ms (Views: 186.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/retentions/new" for ::1 at 2017-04-16 21:25:41 -0500
+Processing by RetentionsController#new as HTML
+  Rendering retentions/new.html.erb within layouts/application
+  Rendered retentions/_form.html.erb (2.0ms)
+  Rendered retentions/new.html.erb within layouts/application (19.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 194ms (Views: 176.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/retentions" for ::1 at 2017-04-16 21:25:45 -0500
+Processing by RetentionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XbdYo8wNu7AiYF5hYT8PO+P0xYrxuWlnlqteo838QfU31GDRliG/PokzcIK6oni7XM6ljWjwEGXr5SHYl1W7tQ==", "retention"=>{"NumeroRetencion"=>"54"}, "commit"=>"Create Retention"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.6ms)[0m  [1m[32mINSERT INTO `retentions` (`NumeroRetencion`, `created_at`, `updated_at`) VALUES ('54', '2017-04-17 02:25:45', '2017-04-17 02:25:45')[0m
+  [1m[35m (73.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/retentions/1
+Completed 302 Found in 105ms (ActiveRecord: 97.3ms)
+
+
+Started GET "/retentions/1" for ::1 at 2017-04-16 21:25:46 -0500
+Processing by RetentionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT  `retentions`.* FROM `retentions` WHERE `retentions`.`Id_Retencion` = 1 LIMIT 1[0m
+  Rendering retentions/show.html.erb within layouts/application
+  Rendered retentions/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 193ms (Views: 169.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:25:48 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 182ms (Views: 162.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retentions/new" for ::1 at 2017-04-16 21:25:49 -0500
+Processing by RetentionsController#new as HTML
+  Rendering retentions/new.html.erb within layouts/application
+  Rendered retentions/_form.html.erb (1.5ms)
+  Rendered retentions/new.html.erb within layouts/application (17.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 201ms (Views: 182.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/retentions" for ::1 at 2017-04-16 21:25:51 -0500
+Processing by RetentionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qHicZU3OaGR9LlrktXV+6M5ItrSJ8hriRdderVCajOZ6Gfmc/jYkvWuSkMSK3vzJKbKZdNMAZ/CcZpkZuDFJ+w==", "retention"=>{"NumeroRetencion"=>"89"}, "commit"=>"Create Retention"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (13.2ms)[0m  [1m[32mINSERT INTO `retentions` (`NumeroRetencion`, `created_at`, `updated_at`) VALUES ('89', '2017-04-17 02:25:51', '2017-04-17 02:25:51')[0m
+  [1m[35m (119.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/retentions/2
+Completed 302 Found in 140ms (ActiveRecord: 132.8ms)
+
+
+Started GET "/retentions/2" for ::1 at 2017-04-16 21:25:52 -0500
+Processing by RetentionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT  `retentions`.* FROM `retentions` WHERE `retentions`.`Id_Retencion` = 2 LIMIT 1[0m
+  Rendering retentions/show.html.erb within layouts/application
+  Rendered retentions/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 211ms (Views: 179.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:25:53 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.0ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 207ms (Views: 188.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:26:01 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 184ms (Views: 164.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:26:02 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 171ms (Views: 154.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:26:03 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 192ms (Views: 172.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:26:04 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.0ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 213ms (Views: 192.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/details/1/edit" for ::1 at 2017-04-16 21:26:07 -0500
+Processing by DetailsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT  `details`.* FROM `details` WHERE `details`.`Id_Detalle` = 1 LIMIT 1[0m
+  Rendering details/edit.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered details/_form.html.erb (4.0ms)
+  Rendered details/edit.html.erb within layouts/application (20.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 206ms (Views: 188.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 21:26:12 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.0ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 183ms (Views: 164.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:26:15 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 197ms (Views: 176.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:26:16 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.0ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 177ms (Views: 157.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:26:17 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 183ms (Views: 161.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/entities/2/edit" for ::1 at 2017-04-16 21:26:20 -0500
+Processing by EntitiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEntity Load (0.0ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 2 LIMIT 1[0m
+  Rendering entities/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (4.5ms)
+  Rendered entities/edit.html.erb within layouts/application (21.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 217ms (Views: 195.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:26:30 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 180ms (Views: 161.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entities/2/edit" for ::1 at 2017-04-16 21:26:35 -0500
+Processing by EntitiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 2 LIMIT 1[0m
+  Rendering entities/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (4.0ms)
+  Rendered entities/edit.html.erb within layouts/application (21.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 209ms (Views: 190.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/logout" for ::1 at 2017-04-16 21:26:49 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:26:49 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 171ms (Views: 155.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:26:50 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 186ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 21:26:51 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.5ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 185ms (Views: 164.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:26:51 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 181ms (Views: 161.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:26:52 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 184ms (Views: 164.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:26:52 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 183ms (Views: 161.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/details" for ::1 at 2017-04-16 21:26:53 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (0.5ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 173ms (Views: 155.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:26:54 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 185ms (Views: 164.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:26:54 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.0ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 195ms (Views: 175.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/retentions" for ::1 at 2017-04-16 21:26:55 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 180ms (Views: 159.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bills" for ::1 at 2017-04-16 21:26:55 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (0.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 181ms (Views: 162.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/taxes" for ::1 at 2017-04-16 21:26:56 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.0ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 183ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entities" for ::1 at 2017-04-16 21:26:56 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 182ms (Views: 163.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:26:58 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 178ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:28:40 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 255ms (Views: 227.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/retains" for ::1 at 2017-04-16 21:28:42 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.5ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 203ms (Views: 173.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/retains/new" for ::1 at 2017-04-16 21:28:46 -0500
+Processing by RetainsController#new as HTML
+  Rendering retains/new.html.erb within layouts/application
+  Rendered retains/_form.html.erb (2.5ms)
+  Rendered retains/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 205ms (Views: 183.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/retains" for ::1 at 2017-04-16 21:30:09 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.0ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 205ms (Views: 185.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/retains/new" for ::1 at 2017-04-16 21:30:11 -0500
+Processing by RetainsController#new as HTML
+  Rendering retains/new.html.erb within layouts/application
+  [1m[36mBill Load (0.0ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retains/_form.html.erb (5.0ms)
+  Rendered retains/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 218ms (Views: 200.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/retains" for ::1 at 2017-04-16 21:30:17 -0500
+Processing by RetainsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wakQaTNNCwOUIVUBe62KZi1XWZXGuiT1Q9oVvFVpLG/Uk45jbwZt3ubZiWJm8yJ32u1wA/UK6y2Kxp/Z951Tzg==", "retain"=>{"Id_Factura"=>"1", "Id_Retencion"=>"2", "PorcentajeRetencion"=>"2"}, "commit"=>"Create Retain"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.4ms)[0m  [1m[32mINSERT INTO `retains` (`Id_Factura`, `Id_Retencion`, `PorcentajeRetencion`, `created_at`, `updated_at`) VALUES (1, 2, 2.0, '2017-04-17 02:30:17', '2017-04-17 02:30:17')[0m
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 42.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"retains", :id=>nil} missing required keys: [:id]):
+  
+app/controllers/retains_controller.rb:31:in `block (2 levels) in create'
+app/controllers/retains_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (709.4ms)
+Started GET "/retains" for ::1 at 2017-04-16 21:33:04 -0500
+Processing by RetainsController#index as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 7.3ms)
+
+
+  
+NoMethodError (undefined method `primary_keys=' for #<Class:0xc1c7628>
+Did you mean?  primary_key=
+               primary_key):
+  
+app/models/retain.rb:2:in `<class:Retain>'
+app/models/retain.rb:1:in `<top (required)>'
+app/controllers/retains_controller.rb:7:in `index'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (709.1ms)
+Started GET "/retains" for ::1 at 2017-04-16 21:33:15 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.5ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"retains", :id=>nil} missing required keys: [:id]):
+    18:         <td><%= retain.Id_Factura %></td>
+    19:         <td><%= retain.Id_Retencion %></td>
+    20:         <td><%= retain.PorcentajeRetencion %></td>
+    21:         <td><%= link_to 'Show', retain %></td>
+    22:         <td><%= link_to 'Edit', edit_retain_path(retain) %></td>
+    23:         <td><%= link_to 'Destroy', retain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+  
+app/views/retains/index.html.erb:21:in `block in _app_views_retains_index_html_erb__1070433601_100733160'
+app/views/retains/index.html.erb:16:in `_app_views_retains_index_html_erb__1070433601_100733160'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (701.5ms)
+Started GET "/" for ::1 at 2017-04-16 21:33:36 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 206ms (Views: 188.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/retains" for ::1 at 2017-04-16 21:33:38 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.5ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"retains", :id=>nil} missing required keys: [:id]):
+    18:         <td><%= retain.Id_Factura %></td>
+    19:         <td><%= retain.Id_Retencion %></td>
+    20:         <td><%= retain.PorcentajeRetencion %></td>
+    21:         <td><%= link_to 'Show', retain %></td>
+    22:         <td><%= link_to 'Edit', edit_retain_path(retain) %></td>
+    23:         <td><%= link_to 'Destroy', retain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+  
+app/views/retains/index.html.erb:21:in `block in _app_views_retains_index_html_erb__1070433601_97205724'
+app/views/retains/index.html.erb:16:in `_app_views_retains_index_html_erb__1070433601_97205724'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (714.4ms)

@@ -53,3 +53,5 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 
 gem 'evil_icons'
+
+gem 'composite_primary_keys'

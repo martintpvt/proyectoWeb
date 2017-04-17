@@ -1,0 +1,47 @@
+<%= form_for(entity) do |f| %>
+  <% if entity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+
+      <ul>
+      <% entity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Id_Usuario %>
+    <%= f.select :Id_Usuario,  options_from_collection_for_select(User.all, :id, :nombre_completo) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Identificacion %>
+    <%= f.text_field :Identificacion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Nombre %>
+    <%= f.text_field :Nombre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Telefono %>
+    <%= f.text_field :Telefono %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Direccion %>
+    <%= f.text_field :Direccion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Email %>
+    <%= f.email_field :Email %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

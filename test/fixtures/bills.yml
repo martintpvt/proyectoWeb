@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Factura: 
+  Id_Entidad: 1
+  Id_Cliente: 1
+  NumeroFactura: MyString
+  FechaEmision: 2017-04-16
+  EmitidaRecibida: false
+  IncluyeIva: false
+  Descuento: 1.5
+
+two:
+  Id_Factura: 
+  Id_Entidad: 1
+  Id_Cliente: 1
+  NumeroFactura: MyString
+  FechaEmision: 2017-04-16
+  EmitidaRecibida: false
+  IncluyeIva: false
+  Descuento: 1.5

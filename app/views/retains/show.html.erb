@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id factura:</strong>
+  <%= @retain.Id_Factura %>
+</p>
+
+<p>
+  <strong>Id retencion:</strong>
+  <%= @retain.Id_Retencion %>
+</p>
+
+<p>
+  <strong>Porcentajeretencion:</strong>
+  <%= @retain.PorcentajeRetencion %>
+</p>
+
+<%= link_to 'Edit', edit_retain_path(@retain) %> |
+<%= link_to 'Back', retains_path %>

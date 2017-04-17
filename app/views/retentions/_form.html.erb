@@ -1,0 +1,22 @@
+<%= form_for(retention) do |f| %>
+  <% if retention.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(retention.errors.count, "error") %> prohibited this retention from being saved:</h2>
+
+      <ul>
+      <% retention.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NumeroRetencion %>
+    <%= f.text_field :NumeroRetencion %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

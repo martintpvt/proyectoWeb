@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
-	get 'home/index'
+	resources :users
+	resources :sessions
+	resources :applies
+	resources :retains
+	resources :taxes
+	resources :retentions
+	resources :details
+	resources :bills
+	resources :entities
 
 	root to: 'home#index'
 
+	get 'home/index'
 	get 'sessions/new'
-
-	resources :users
-	resources :sessions
-
+	
 	get 'signup', to: 'users#new', as: 'signup'
 	get 'showusers', to: 'users#show', as: 'showusers'
 	get 'updateuser', to: 'users#update', as: 'updateuser'
@@ -15,4 +21,6 @@ Rails.application.routes.draw do
 
 	get 'login', to: 'sessions#new', as: 'login'
 	get 'logout', to: 'sessions#destroy', as: 'logout'
+
+	
 end

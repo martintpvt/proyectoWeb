@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Factura: 1
+  Id_Retencion: 1
+  PorcentajeRetencion: 1.5
+
+two:
+  Id_Factura: 1
+  Id_Retencion: 1
+  PorcentajeRetencion: 1.5

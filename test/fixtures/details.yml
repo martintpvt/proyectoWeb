@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Detalle: 
+  Id_Factura: 1
+  Descripcion: MyString
+  ValorUnitario: 1.5
+  Cantidad: 1
+
+two:
+  Id_Detalle: 
+  Id_Factura: 1
+  Descripcion: MyString
+  ValorUnitario: 1.5
+  Cantidad: 1

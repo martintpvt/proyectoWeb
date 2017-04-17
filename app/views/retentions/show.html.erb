@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id retencion:</strong>
+  <%= @retention.Id_Retencion %>
+</p>
+
+<p>
+  <strong>Numeroretencion:</strong>
+  <%= @retention.NumeroRetencion %>
+</p>
+
+<%= link_to 'Edit', edit_retention_path(@retention) %> |
+<%= link_to 'Back', retentions_path %>

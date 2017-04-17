@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id factura:</strong>
+  <%= @bill.Id_Factura %>
+</p>
+
+<p>
+  <strong>Id entidad:</strong>
+  <%= @bill.Id_Entidad %>
+</p>
+
+<p>
+  <strong>Id cliente:</strong>
+  <%= @bill.Id_Cliente %>
+</p>
+
+<p>
+  <strong>Numerofactura:</strong>
+  <%= @bill.NumeroFactura %>
+</p>
+
+<p>
+  <strong>Fechaemision:</strong>
+  <%= @bill.FechaEmision %>
+</p>
+
+<p>
+  <strong>Emitidarecibida:</strong>
+  <%= @bill.EmitidaRecibida %>
+</p>
+
+<p>
+  <strong>Incluyeiva:</strong>
+  <%= @bill.IncluyeIva %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @bill.Descuento %>
+</p>
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>

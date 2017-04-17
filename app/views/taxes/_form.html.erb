@@ -1,0 +1,27 @@
+<%= form_for(tax) do |f| %>
+  <% if tax.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tax.errors.count, "error") %> prohibited this tax from being saved:</h2>
+
+      <ul>
+      <% tax.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NombreImpuesto %>
+    <%= f.text_field :NombreImpuesto %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PorcentajeImpuesto %>
+    <%= f.number_field :PorcentajeImpuesto, step: :any %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

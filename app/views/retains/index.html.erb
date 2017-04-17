@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Retains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id factura</th>
+      <th>Id retencion</th>
+      <th>Porcentajeretencion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @retains.each do |retain| %>
+      <tr>
+        <td><%= retain.Id_Factura %></td>
+        <td><%= retain.Id_Retencion %></td>
+        <td><%= retain.PorcentajeRetencion %></td>
+        <td><%= link_to 'Show', retain %></td>
+        <td><%= link_to 'Edit', edit_retain_path(retain) %></td>
+        <td><%= link_to 'Destroy', retain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Retain', new_retain_path %>

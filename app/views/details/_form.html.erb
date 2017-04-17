@@ -1,0 +1,37 @@
+<%= form_for(detail) do |f| %>
+  <% if detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(detail.errors.count, "error") %> prohibited this detail from being saved:</h2>
+
+      <ul>
+      <% detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Id_Factura %>
+    <%= f.select :Id_Factura,  options_from_collection_for_select(Bill.all, :Id_Factura, :Id_Factura) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Descripcion %>
+    <%= f.text_field :Descripcion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ValorUnitario %>
+    <%= f.text_field :ValorUnitario, step: :any %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Cantidad %>
+    <%= f.number_field :Cantidad %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
