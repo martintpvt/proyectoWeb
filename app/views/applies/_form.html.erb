@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :Id_Entidad %>
-    <%= f.number_field :Id_Entidad %>
+    <%= f.select :Id_Entidad,  options_from_collection_for_select(Entity.all, :Id_Entidad, :Nombre) %>
   </div>
 
   <div class="field">
     <%= f.label :Id_Impuesto %>
-    <%= f.number_field :Id_Impuesto %>
+    <%= f.select :Id_Impuesto,  options_from_collection_for_select(Tax.all, :Id_Impuesto, :NombreImpuesto) %>
   </div>
 
   <div class="actions">

@@ -5135,3 +5135,843 @@ app/views/retains/index.html.erb:16:in `_app_views_retains_index_html_erb__10704
   Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
   Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (714.4ms)
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:15:51 -0500
+  
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.2ms)
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:16:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (5.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6869135800435599285', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateEntities (20170416231401)
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE `entities` (`Id_Entidad` int AUTO_INCREMENT PRIMARY KEY, `Id_Usuario` int NOT NULL, `Identificacion` varchar(255) NOT NULL, `Nombre` varchar(255) NOT NULL, `Telefono` varchar(255) NOT NULL, `Direccion` varchar(255) NOT NULL, `Email` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (10.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416231401')[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBills (20170416231537)
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE `bills` (`Id_Factura` int AUTO_INCREMENT PRIMARY KEY, `Id_Entidad` int NOT NULL, `Id_Cliente` int NOT NULL, `NumeroFactura` varchar(255) NOT NULL, `FechaEmision` date NOT NULL, `EmitidaRecibida` tinyint(1) NOT NULL, `IncluyeIva` tinyint(1) NOT NULL, `Descuento` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416231537')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDetails (20170416233509)
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE `details` (`Id_Detalle` int AUTO_INCREMENT PRIMARY KEY, `Id_Factura` int NOT NULL, `Descripcion` varchar(255) NOT NULL, `ValorUnitario` float NOT NULL, `Cantidad` int NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416233509')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRetentions (20170416233715)
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE `retentions` (`Id_Retencion` int AUTO_INCREMENT PRIMARY KEY, `NumeroRetencion` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416233715')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTaxes (20170416233800)
+  [1m[35m (19.7ms)[0m  [1m[35mCREATE TABLE `taxes` (`Id_Impuesto` int AUTO_INCREMENT PRIMARY KEY, `NombreImpuesto` varchar(255) NOT NULL, `PorcentajeImpuesto` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416233800')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRetains (20170416234400)
+  [1m[35m (18.2ms)[0m  [1m[35mCREATE TABLE `retains` (`Id_Factura` int NOT NULL, `Id_Retencion` int NOT NULL, `PorcentajeRetencion` float NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (36.7ms)[0m  [1m[35malter table retains add primary key(Id_Factura, Id_Retencion)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416234400')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateApplies (20170416234459)
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE `applies` (`Id_Entidad` int NOT NULL, `Id_Impuesto` int NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (30.9ms)[0m  [1m[35malter table applies add primary key(Id_Entidad, Id_Impuesto)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170416234459')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6869135800435599285')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `applies`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW CREATE TABLE `bills`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'bills'[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSHOW CREATE TABLE `details`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'details'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `entities`[0m
+  [1m[35m (2.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'entities'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `retains`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `retentions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'retentions'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `taxes`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'taxes'[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:16:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4088ms (Views: 4057.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/showusers" for 127.0.0.1 at 2017-04-16 22:29:36 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (76.9ms)
+Completed 200 OK in 240ms (Views: 217.9ms | ActiveRecord: 14.3ms)
+
+
+Started POST "/deleteuser" for 127.0.0.1 at 2017-04-16 22:29:40 -0500
+Processing by UsersController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q8x/JQtse2WDpafu3stoGzfhWFyyU+6xl5/8RY+plB/Mz2UamKzMB6lmW7btwRoxbYas6IO65eBJJJ6Ln5MwVw==", "post"=>{"user"=>"1"}, "commit"=>"Delete"}
+  Rendering users/delete.html.erb within layouts/application
+  Rendered users/delete.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 117ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:29:43 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2017-04-16 22:29:45 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 155ms (Views: 150.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-16 22:30:03 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7+w8BKnyToKpdkiGfDqX3p3DYn6jmD7EUaFoe+9CZ2h7xmCv/UPfZ1G4ZYsngsmXvxYhhInRqMqm6Ph7J8uFbQ==", "user"=>{"name"=>"Martin", "lastname"=>"Almeida", "username"=>"martintpvt", "email"=>"martin_almeida@outlook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `created_at`, `updated_at`, `name`, `lastname`, `username`) VALUES ('martin_almeida@outlook.com', '$2a$10$FOOUwQAjnpH6gipfSrUWG.8QpHVNeR/ncpoAE23GMNztvIfOHmVXO', '2017-04-17 03:30:03', '2017-04-17 03:30:03', 'Martin', 'Almeida', 'martintpvt')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:30:03 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 141ms (Views: 139.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/showusers" for 127.0.0.1 at 2017-04-16 22:30:08 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/entities" for 127.0.0.1 at 2017-04-16 22:30:14 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (2.6ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 181ms (Views: 165.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/applies" for 127.0.0.1 at 2017-04-16 22:30:19 -0500
+Processing by AppliesController#index as HTML
+  Rendering applies/index.html.erb within layouts/application
+  [1m[36mApply Load (1.8ms)[0m  [1m[34mSELECT `applies`.* FROM `applies`[0m
+  Rendered applies/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 138ms (Views: 120.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:30:24 -0500
+Processing by RetainsController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0)):
+  
+app/models/retain.rb:5:in `<class:Retain>'
+app/models/retain.rb:4:in `<top (required)>'
+app/controllers/retains_controller.rb:7:in `index'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.2ms)
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:31:44 -0500
+Processing by RetainsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base):
+  
+app/models/retain.rb:4:in `<top (required)>'
+app/controllers/retains_controller.rb:7:in `index'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:34:39 -0500
+Processing by RetainsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base):
+  
+app/models/retain.rb:4:in `<top (required)>'
+app/controllers/retains_controller.rb:7:in `index'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.1ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.8ms)
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:36:43 -0500
+Processing by RetainsController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0)):
+  
+app/models/retain.rb:5:in `<class:Retain>'
+app/models/retain.rb:4:in `<top (required)>'
+app/controllers/retains_controller.rb:7:in `index'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.5ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.7ms)
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:38:02 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.6ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 142ms (Views: 100.5ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/retains/new" for 127.0.0.1 at 2017-04-16 22:38:07 -0500
+Processing by RetainsController#new as HTML
+  Rendering retains/new.html.erb within layouts/application
+  [1m[36mBill Load (0.6ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  [1m[36mRetention Load (5.2ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retains/_form.html.erb (44.8ms)
+  Rendered retains/new.html.erb within layouts/application (46.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 157ms (Views: 144.0ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2017-04-16 22:38:11 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (2.6ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 77ms (Views: 71.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/bills/new" for 127.0.0.1 at 2017-04-16 22:38:12 -0500
+Processing by BillsController#new as HTML
+  Rendering bills/new.html.erb within layouts/application
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered bills/_form.html.erb (37.7ms)
+  Rendered bills/new.html.erb within layouts/application (38.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 159ms (Views: 143.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/entities" for 127.0.0.1 at 2017-04-16 22:38:15 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 94.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/entities/new" for 127.0.0.1 at 2017-04-16 22:38:16 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (12.9ms)
+  Rendered entities/new.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 99.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/deleteuser" for 127.0.0.1 at 2017-04-16 22:38:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/deleteuser"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [81 times] (38.0ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/martin/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.6ms)
+Started GET "/entities/new" for 127.0.0.1 at 2017-04-16 22:38:25 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (5.9ms)
+  Rendered entities/new.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 89ms (Views: 83.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/showusers" for 127.0.0.1 at 2017-04-16 22:38:28 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (8.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/deleteuser" for 127.0.0.1 at 2017-04-16 22:38:30 -0500
+Processing by UsersController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jj4msieKTYj92DO6PeJwBjitjeC0ODCzrPgu9w5vyHABPTyNtEr66tcbz+IO6AIsYsp5VIXRO+JyQ0w5HlVsOA==", "post"=>{"user"=>"1"}, "commit"=>"Delete"}
+  Rendering users/delete.html.erb within layouts/application
+  Rendered users/delete.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 95.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/showusers" for 127.0.0.1 at 2017-04-16 22:38:36 -0500
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered users/show.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 91ms (Views: 87.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:38:39 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-04-16 22:39:14 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:39:14 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 110ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2017-04-16 22:40:32 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-16 22:40:43 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Ko/n8uditUT1pDwelGPsIh/tK64tpn9CTXu/SM0oTBAgGM0nywbMOsYvf0h6dH5qqr3VJL/D/P+fH79671DNQ==", "user"=>{"name"=>"Martin", "lastname"=>"Almeida", "username"=>"martintpvt", "email"=>"martin_almeida@outlook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (10.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[31mROLLBACK[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 237ms (Views: 76.7ms | ActiveRecord: 15.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-16 22:40:51 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"643qKtjESKw8X294mZpYDbVZFs7vr9R3drqs5zQYHi0cwISdeEAzHuqwXN0WXcapUop6E2TxGyT2EP5d2imDqQ==", "user"=>{"name"=>"Martin", "lastname"=>"Almeida", "username"=>"martintpvt", "email"=>"martin_almeida@outlook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `password_digest`, `created_at`, `updated_at`, `name`, `lastname`, `username`) VALUES ('martin_almeida@outlook.com', '$2a$10$IddJOMbdaldeksrAy.jjjet14OEXvzobqdXnuWN5OvFVt9be7mpiy', '2017-04-17 03:40:51', '2017-04-17 03:40:51', 'Martin', 'Almeida', 'martintpvt')[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 170ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-16 22:40:51 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/entities" for 127.0.0.1 at 2017-04-16 22:40:54 -0500
+Processing by EntitiesController#index as HTML
+  Rendering entities/index.html.erb within layouts/application
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered entities/index.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/entities/new" for 127.0.0.1 at 2017-04-16 22:40:56 -0500
+Processing by EntitiesController#new as HTML
+  Rendering entities/new.html.erb within layouts/application
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  Rendered entities/_form.html.erb (7.5ms)
+  Rendered entities/new.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 111ms (Views: 105.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/entities" for 127.0.0.1 at 2017-04-16 22:41:21 -0500
+Processing by EntitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PRjSyJCGhyKHGav0iH+RhmWLyFfrYMSQGOomM5P5qb4oSWA+D3Q2aRNzG09PW+492dreVo5TJz0MPMas3l8Sdg==", "entity"=>{"Id_Usuario"=>"1", "Identificacion"=>"1718947706001", "Nombre"=>"Martin", "Telefono"=>"0996543240", "Direccion"=>"Angamarca", "Email"=>"martin.almeida@udla.edu.ec"}, "commit"=>"Create Entity"}
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO `entities` (`Id_Usuario`, `Identificacion`, `Nombre`, `Telefono`, `Direccion`, `Email`, `created_at`, `updated_at`) VALUES (1, '1718947706001', 'Martin', '0996543240', 'Angamarca', 'martin.almeida@udla.edu.ec', '2017-04-17 03:41:21', '2017-04-17 03:41:21')[0m
+  [1m[35m (16.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/entities/1
+Completed 302 Found in 28ms (ActiveRecord: 22.6ms)
+
+
+Started GET "/entities/1" for 127.0.0.1 at 2017-04-16 22:41:21 -0500
+Processing by EntitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEntity Load (3.3ms)[0m  [1m[34mSELECT  `entities`.* FROM `entities` WHERE `entities`.`Id_Entidad` = 1 LIMIT 1[0m
+  Rendering entities/show.html.erb within layouts/application
+  Rendered entities/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 92.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/taxes" for 127.0.0.1 at 2017-04-16 22:41:24 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (2.9ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 126ms (Views: 101.2ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2017-04-16 22:41:25 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (3.5ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 121ms (Views: 114.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/bills/new" for 127.0.0.1 at 2017-04-16 22:41:27 -0500
+Processing by BillsController#new as HTML
+  Rendering bills/new.html.erb within layouts/application
+  [1m[36mEntity Load (2.7ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  Rendered bills/_form.html.erb (14.4ms)
+  Rendered bills/new.html.erb within layouts/application (15.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 115ms (Views: 110.7ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/bills" for 127.0.0.1 at 2017-04-16 22:41:35 -0500
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/ZTYtjzJlwtNa8bCjTAhwNBSGw11gVivGfMRRTkEMwoLMjYQ4ORBjFSGTtakilOcd08wxQ+Lw2ag6xIuoBVnA==", "bill"=>{"Id_Entidad"=>"1", "Id_Cliente"=>"1", "NumeroFactura"=>"1", "FechaEmision(1i)"=>"2017", "FechaEmision(2i)"=>"4", "FechaEmision(3i)"=>"17", "EmitidaRecibida"=>"1", "IncluyeIva"=>"1", "Descuento"=>"0"}, "commit"=>"Create Bill"}
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `bills` (`Id_Entidad`, `Id_Cliente`, `NumeroFactura`, `FechaEmision`, `EmitidaRecibida`, `IncluyeIva`, `Descuento`, `created_at`, `updated_at`) VALUES (1, 1, '1', '2017-04-17', 1, 1, 0.0, '2017-04-17 03:41:35', '2017-04-17 03:41:35')[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/bills/1
+Completed 302 Found in 11ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/bills/1" for 127.0.0.1 at 2017-04-16 22:41:36 -0500
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBill Load (0.3ms)[0m  [1m[34mSELECT  `bills`.* FROM `bills` WHERE `bills`.`Id_Factura` = 1 LIMIT 1[0m
+  Rendering bills/show.html.erb within layouts/application
+  Rendered bills/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2017-04-16 22:41:38 -0500
+Processing by BillsController#index as HTML
+  Rendering bills/index.html.erb within layouts/application
+  [1m[36mBill Load (2.7ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  Rendered bills/index.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 110ms (Views: 106.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/details" for 127.0.0.1 at 2017-04-16 22:41:41 -0500
+Processing by DetailsController#index as HTML
+  Rendering details/index.html.erb within layouts/application
+  [1m[36mDetail Load (2.1ms)[0m  [1m[34mSELECT `details`.* FROM `details`[0m
+  Rendered details/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 94.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/retentions" for 127.0.0.1 at 2017-04-16 22:41:43 -0500
+Processing by RetentionsController#index as HTML
+  Rendering retentions/index.html.erb within layouts/application
+  [1m[36mRetention Load (3.8ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retentions/index.html.erb within layouts/application (9.0ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 100.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/retentions/new" for 127.0.0.1 at 2017-04-16 22:41:44 -0500
+Processing by RetentionsController#new as HTML
+  Rendering retentions/new.html.erb within layouts/application
+  Rendered retentions/_form.html.erb (1.5ms)
+  Rendered retentions/new.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 133ms (Views: 128.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/retentions" for 127.0.0.1 at 2017-04-16 22:41:48 -0500
+Processing by RetentionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Qc9eaRUl9v3xfG6a7b149VHn15Kys+JFku7wbWMMHa/8E8r16m6POYzYl6fruHvkjmRzw/5rlB43onGdDisKA==", "retention"=>{"NumeroRetencion"=>"1"}, "commit"=>"Create Retention"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO `retentions` (`NumeroRetencion`, `created_at`, `updated_at`) VALUES ('1', '2017-04-17 03:41:48', '2017-04-17 03:41:48')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/retentions/1
+Completed 302 Found in 8ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/retentions/1" for 127.0.0.1 at 2017-04-16 22:41:48 -0500
+Processing by RetentionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRetention Load (0.5ms)[0m  [1m[34mSELECT  `retentions`.* FROM `retentions` WHERE `retentions`.`Id_Retencion` = 1 LIMIT 1[0m
+  Rendering retentions/show.html.erb within layouts/application
+  Rendered retentions/show.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 95.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:41:50 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.3ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 121ms (Views: 119.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/retains/new" for 127.0.0.1 at 2017-04-16 22:41:52 -0500
+Processing by RetainsController#new as HTML
+  Rendering retains/new.html.erb within layouts/application
+  [1m[36mBill Load (1.9ms)[0m  [1m[34mSELECT `bills`.* FROM `bills`[0m
+  [1m[36mRetention Load (0.2ms)[0m  [1m[34mSELECT `retentions`.* FROM `retentions`[0m
+  Rendered retains/_form.html.erb (6.9ms)
+  Rendered retains/new.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 128ms (Views: 123.2ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/retains" for 127.0.0.1 at 2017-04-16 22:41:57 -0500
+Processing by RetainsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jYi82BR3n7uxa4QCKr8SFXzw5IK9cgvd/5UAsa48lIBEw/HtsrxL0WwFaeE94Tjheit9eTtUMzD8bKCDBu/UYQ==", "retain"=>{"Id_Factura"=>"1", "Id_Retencion"=>"1", "PorcentajeRetencion"=>"2"}, "commit"=>"Create Retain"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO `retains` (`Id_Factura`, `Id_Retencion`, `PorcentajeRetencion`, `created_at`, `updated_at`) VALUES (1, 1, 2.0, '2017-04-17 03:41:57', '2017-04-17 03:41:57')[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/retains/1,1
+Completed 302 Found in 19ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/retains/1,1" for 127.0.0.1 at 2017-04-16 22:41:57 -0500
+Processing by RetainsController#show as HTML
+  Parameters: {"id"=>"1,1"}
+  [1m[36mRetain Load (0.3ms)[0m  [1m[34mSELECT  `retains`.* FROM `retains` WHERE (`retains`.`Id_Factura` = 1 AND `retains`.`Id_Retencion` = 1) LIMIT 1[0m
+  Rendering retains/show.html.erb within layouts/application
+  Rendered retains/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 95ms (Views: 87.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:42:02 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (3.2ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 90ms (Views: 82.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/retains" for 127.0.0.1 at 2017-04-16 22:42:09 -0500
+Processing by RetainsController#index as HTML
+  Rendering retains/index.html.erb within layouts/application
+  [1m[36mRetain Load (0.3ms)[0m  [1m[34mSELECT `retains`.* FROM `retains`[0m
+  Rendered retains/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 93ms (Views: 90.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/applies" for 127.0.0.1 at 2017-04-16 22:42:10 -0500
+Processing by AppliesController#index as HTML
+  Rendering applies/index.html.erb within layouts/application
+  [1m[36mApply Load (0.4ms)[0m  [1m[34mSELECT `applies`.* FROM `applies`[0m
+  Rendered applies/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 145ms (Views: 130.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/applies" for 127.0.0.1 at 2017-04-16 22:43:29 -0500
+Processing by AppliesController#index as HTML
+  Rendering applies/index.html.erb within layouts/application
+  [1m[36mApply Load (1.2ms)[0m  [1m[34mSELECT `applies`.* FROM `applies`[0m
+  Rendered applies/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 98.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/applies/new" for 127.0.0.1 at 2017-04-16 22:43:31 -0500
+Processing by AppliesController#new as HTML
+  Rendering applies/new.html.erb within layouts/application
+  Rendered applies/_form.html.erb (2.0ms)
+  Rendered applies/new.html.erb within layouts/application (7.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 110.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/taxes" for 127.0.0.1 at 2017-04-16 22:45:31 -0500
+Processing by TaxesController#index as HTML
+  Rendering taxes/index.html.erb within layouts/application
+  [1m[36mTax Load (0.3ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered taxes/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 103ms (Views: 99.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/taxes/new" for 127.0.0.1 at 2017-04-16 22:45:33 -0500
+Processing by TaxesController#new as HTML
+  Rendering taxes/new.html.erb within layouts/application
+  Rendered taxes/_form.html.erb (1.8ms)
+  Rendered taxes/new.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 86ms (Views: 82.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/taxes" for 127.0.0.1 at 2017-04-16 22:45:38 -0500
+Processing by TaxesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tM5+xMA4lNpXMgBTons9JCiysLO2S1KUA31gdDAedPgS62EzfJvwPSutv021/F5HtJkt7t1BvR3DeTE1DxU16w==", "tax"=>{"NombreImpuesto"=>"IVA", "PorcentajeImpuesto"=>"14"}, "commit"=>"Create Tax"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO `taxes` (`NombreImpuesto`, `PorcentajeImpuesto`, `created_at`, `updated_at`) VALUES ('IVA', 14.0, '2017-04-17 03:45:38', '2017-04-17 03:45:38')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/taxes/1
+Completed 302 Found in 11ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/taxes/1" for 127.0.0.1 at 2017-04-16 22:45:38 -0500
+Processing by TaxesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTax Load (0.4ms)[0m  [1m[34mSELECT  `taxes`.* FROM `taxes` WHERE `taxes`.`Id_Impuesto` = 1 LIMIT 1[0m
+  Rendering taxes/show.html.erb within layouts/application
+  Rendered taxes/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 93.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/applies" for 127.0.0.1 at 2017-04-16 22:45:40 -0500
+Processing by AppliesController#index as HTML
+  Rendering applies/index.html.erb within layouts/application
+  [1m[36mApply Load (2.7ms)[0m  [1m[34mSELECT `applies`.* FROM `applies`[0m
+  Rendered applies/index.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 93.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/applies/new" for 127.0.0.1 at 2017-04-16 22:45:41 -0500
+Processing by AppliesController#new as HTML
+  Rendering applies/new.html.erb within layouts/application
+  [1m[36mEntity Load (2.1ms)[0m  [1m[34mSELECT `entities`.* FROM `entities`[0m
+  [1m[36mTax Load (0.6ms)[0m  [1m[34mSELECT `taxes`.* FROM `taxes`[0m
+  Rendered applies/_form.html.erb (48.3ms)
+  Rendered applies/new.html.erb within layouts/application (49.4ms)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 130ms (Views: 116.2ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/applies" for 127.0.0.1 at 2017-04-16 22:45:42 -0500
+Processing by AppliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vbgVTbEbwEp8PFxBHBPeke5kJeRExWsELBgW9UiItzuZMrQdja/wNE5VBk0VTtGxcougN9Qq3ZKBYzU4I7nV4w==", "apply"=>{"Id_Entidad"=>"1", "Id_Impuesto"=>"1"}, "commit"=>"Create Apply"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO `applies` (`Id_Entidad`, `Id_Impuesto`, `created_at`, `updated_at`) VALUES (1, 1, '2017-04-17 03:45:42', '2017-04-17 03:45:42')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/applies/1,1
+Completed 302 Found in 8ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/applies/1,1" for 127.0.0.1 at 2017-04-16 22:45:42 -0500
+Processing by AppliesController#show as HTML
+  Parameters: {"id"=>"1,1"}
+  [1m[36mApply Load (0.4ms)[0m  [1m[34mSELECT  `applies`.* FROM `applies` WHERE (`applies`.`Id_Entidad` = 1 AND `applies`.`Id_Impuesto` = 1) LIMIT 1[0m
+  Rendering applies/show.html.erb within layouts/application
+  Rendered applies/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 96ms (Views: 91.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/applies" for 127.0.0.1 at 2017-04-16 22:45:45 -0500
+Processing by AppliesController#index as HTML
+  Rendering applies/index.html.erb within layouts/application
+  [1m[36mApply Load (0.3ms)[0m  [1m[34mSELECT `applies`.* FROM `applies`[0m
+  Rendered applies/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 1.3ms)
+
+

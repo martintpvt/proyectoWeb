@@ -50,8 +50,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
 
-gem 'jquery-rails'
-
 gem 'evil_icons'
 
 gem 'composite_primary_keys'
