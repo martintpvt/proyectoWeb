@@ -1,0 +1,21 @@
+I"n(function() {
+  jQuery(function() {
+    var clients;
+    $('#bill_Id_Cliente').parent().hide();
+    clients = $('#bill_Id_Cliente').html();
+    return $('#bill_Id_Entidad').change(function() {
+      var entidad, options;
+      entidad = $('#bill_Id_Entidad :selected').text();
+      options = $(clients).filter("optgroup[label='" + entidad + "']").html();
+      if (options) {
+        $('#bill_Id_Cliente').html(options);
+        return $('#bill_Id_Cliente').parent().show();
+      } else {
+        $('#bill_Id_Cliente').empty();
+        return $('#bill_Id_Cliente').parent().hide();
+      }
+    });
+  });
+
+}).call(this);
+:ET

@@ -18,21 +18,29 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="<%= root_url %>">Home</a></li>
-				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="<%= signup_path %>">Crear</a></li>
-						<li><a href="<%= showusers_path %>">Mostrar</a></li>
-						<li><a href="<%= updateuser_path %>">Actualizar</a></li>
-						<li><a href="<%= deleteuser_path %>">Eliminar</a></li>
-					</ul>
-				</li>
-				<li><a href="<%= entities_path %>">Entidades</a></li>
-				<li><a href="<%= taxes_path %>">Impuestos</a></li>
-				<li><a href="<%= bills_path %>">Facturas</a></li>
-				<li><a href="<%= details_path %>">Detalles</a></li>
-				<li><a href="<%= retentions_path %>">Retenciones</a></li>
-				<li><a href="<%= retains_path %>">Relacionar Retencion con Factura</a></li>
-				<li><a href="<%= applies_path %>">Agregar Impuestos a Entidad</a></li>
+				<% if logged_in? %>
+					<% 	if session[:role] == 1 %>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Usuarios <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="<%= signup_path %>">Crear</a></li>
+								<li><a href="<%= showusers_path %>">Mostrar</a></li>
+								<li><a href="<%= updateuser_path %>">Actualizar</a></li>
+								<li><a href="<%= deleteuser_path %>">Eliminar</a></li>
+							</ul>
+						</li>
+						<li><a href="<%= roles_path %>">Roles</a></li>
+						<li><a href="<%= taxes_path %>">Impuestos</a></li>
+					<% 	end
+						if session[:role] == 2 %>
+						<li><a href="<%= entities_path %>">Entidades</a></li>
+						<li><a href="<%= clients_path %>">Clientes</a></li>
+						<li><a href="<%= bills_path %>">Facturas</a></li>
+						<li><a href="<%= details_path %>">Detalles</a></li>
+						<li><a href="<%= retentions_path %>">Retenciones</a></li>
+						<li><a href="<%= retains_path %>">Relacionar Retencion con Factura</a></li>
+						<li><a href="<%= applies_path %>">Agregar Impuestos a Entidad</a></li>
+					<% end %>
+				<% end %>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">

@@ -12,8 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Id_Usuario %>
-    <%= f.select :Id_Usuario,  options_from_collection_for_select(User.all, :id, :nombre_completo) %>
+    <%= f.hidden_field :Id_Usuario,  :value => session[:role] %>
   </div>
 
   <div class="field">

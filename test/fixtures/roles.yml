@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Rol: 
+  NombreRol: MyString
+
+two:
+  Id_Rol: 
+  NombreRol: MyString

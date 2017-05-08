@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	before_filter :admin_user?, :except => :new
 	def new
 		@user = User.new
 	end
@@ -13,6 +14,7 @@ class UsersController < ApplicationController
 				session[:lastname] = @user.lastname
 				session[:username] = @user.username
 				session[:email] = @user.email
+				session[:role] = @user.role
 
 				redirect_to root_url, notice: 'Thank you for signing up!'
 			else
@@ -36,6 +38,6 @@ class UsersController < ApplicationController
 	private
 
 	def allowed_params
-		params.require(:user).permit(:email, :password, :password_confirmation, :name, :lastname, :username)
+		params.require(:user).permit(:email, :password, :password_confirmation, :name, :lastname, :username, :role)
 	end
 end

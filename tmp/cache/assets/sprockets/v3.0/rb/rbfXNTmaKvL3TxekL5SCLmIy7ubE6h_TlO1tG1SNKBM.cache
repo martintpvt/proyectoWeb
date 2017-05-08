@@ -1,0 +1,18 @@
+I"å(function() {
+  jQuery(function() {
+    var clients;
+    clients = $('#bill_Id_Cliente').html();
+    return $('#bill_Id_Entidad').change(function() {
+      var entidad, options;
+      entidad = $('#bill_Id_Entidad :selected').text();
+      options = $(clients).filter("optgroup[label='" + entidad + "']").html();
+      if (options) {
+        return $('#bill_Id_Cliente').html(options);
+      } else {
+        return $('#bill_Id_Cliente').empty();
+      }
+    });
+  });
+
+}).call(this);
+:ET

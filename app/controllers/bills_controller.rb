@@ -1,4 +1,5 @@
 class BillsController < ApplicationController
+  before_filter :normal_user?
   before_action :set_bill, only: [:show, :edit, :update, :destroy]
 
   # GET /bills

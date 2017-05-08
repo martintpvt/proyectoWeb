@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Cliente: 
+  Id_Entidad: 1
+  Identificacion: MyString
+  Nombre: MyString
+  Telefono: MyString
+  Direccion: MyString
+  Email: MyString
+
+two:
+  Id_Cliente: 
+  Id_Entidad: 1
+  Identificacion: MyString
+  Nombre: MyString
+  Telefono: MyString
+  Direccion: MyString
+  Email: MyString

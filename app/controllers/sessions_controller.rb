@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
 			session[:lastname] = user.lastname
 			session[:username] = user.username
 			session[:email] = user.email
+			session[:role] = user.role
 			redirect_to root_url, notice: 'Logged in!'
 		else
 			flash.now.alert = 'Email or password is invalid'
@@ -23,6 +24,7 @@ class SessionsController < ApplicationController
 		session[:lastname] = nil
 		session[:username] = nil
 		session[:email] = nil
+		session[:role] = nil
 		redirect_to root_url, notice: 'Logged out!'
 	end
 end

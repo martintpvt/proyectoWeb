@@ -1,4 +1,5 @@
 class DetailsController < ApplicationController
+  before_filter :normal_user?
   before_action :set_detail, only: [:show, :edit, :update, :destroy]
 
   # GET /details

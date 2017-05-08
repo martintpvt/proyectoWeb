@@ -1,4 +1,5 @@
 class AppliesController < ApplicationController
+  before_filter :normal_user?
   before_action :set_apply, only: [:show, :edit, :update, :destroy]
 
   # GET /applies

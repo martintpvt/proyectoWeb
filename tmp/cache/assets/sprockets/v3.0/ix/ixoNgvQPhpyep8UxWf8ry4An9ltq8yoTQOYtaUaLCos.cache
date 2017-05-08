@@ -1,0 +1,8 @@
+I"}(function() {
+  jQuery(function() {
+    var clients;
+    return clients = $('#entity_client_id');
+  });
+
+}).call(this);
+:ET
