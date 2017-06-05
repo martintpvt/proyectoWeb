@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170419020410) do
+ActiveRecord::Schema.define(version: 20170416234459) do
 
   create_table "applies", primary_key: ["Id_Entidad", "Id_Impuesto"], force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "Id_Entidad",  null: false
@@ -29,17 +29,6 @@ ActiveRecord::Schema.define(version: 20170419020410) do
     t.float    "Descuento",       limit: 24, null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
-  end
-
-  create_table "clients", primary_key: "Id_Cliente", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "Id_Entidad",     null: false
-    t.string   "Identificacion", null: false
-    t.string   "Nombre",         null: false
-    t.string   "Telefono",       null: false
-    t.string   "Direccion",      null: false
-    t.string   "Email",          null: false
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
   end
 
   create_table "details", primary_key: "Id_Detalle", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -76,12 +65,6 @@ ActiveRecord::Schema.define(version: 20170419020410) do
     t.datetime "updated_at",      null: false
   end
 
-  create_table "roles", primary_key: "Id_Rol", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "NombreRol",  null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "taxes", primary_key: "Id_Impuesto", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "NombreImpuesto",                null: false
     t.float    "PorcentajeImpuesto", limit: 24, null: false
@@ -90,14 +73,13 @@ ActiveRecord::Schema.define(version: 20170419020410) do
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "email",           null: false
-    t.string   "password_digest", null: false
+    t.string   "email"
+    t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.string   "name",            null: false
-    t.string   "lastname",        null: false
-    t.string   "username",        null: false
-    t.integer  "role",            null: false
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "username"
   end
 
 end

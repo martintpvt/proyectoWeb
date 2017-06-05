@@ -54,13 +54,6 @@
     </div>
   </div>
 
-  <div class="col-sm-6">
-    <div class="form-group">
-      <%= f.label :role %>
-      <%= f.select :role,  options_from_collection_for_select(Role.all, :Id_Rol, :NombreRol) %>
-    </div>
-  </div>
-
   <div class="col-sm-12">
     <div class="actions"><%= f.submit "Sign Up", class: "btn btn-default" %></div>
   </div>

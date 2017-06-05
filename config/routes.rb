@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :clients
+	resources :clients
   resources :roles
 	resources :users
 	resources :sessions

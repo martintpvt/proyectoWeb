@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :Id_Entidad %>
-    <%= f.collection_select :Id_Entidad, Entity.order(:Nombre), :Id_Entidad, :Nombre, include_blank: true %>
+    <%= f.select :Id_Entidad,  options_from_collection_for_select(Entity.all, :Id_Entidad, :Nombre) %>
   </div>
 
   <div class="field">
     <%= f.label :Id_Cliente %>
-    <%= f.grouped_collection_select :Id_Cliente, Entity.order(:Nombre), :clients, :Nombre, :Id_Cliente, :Nombre, include_blank: true %>
+    <%= f.select :Id_Cliente,  options_from_collection_for_select(Entity.all, :Id_Entidad, :Nombre) %>
   </div>
 
   <div class="field">

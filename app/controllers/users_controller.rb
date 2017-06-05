@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(allowed_params)
+		@user.role = 2
 		if @user.save
 			
 			if !logged_in?

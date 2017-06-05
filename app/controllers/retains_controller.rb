@@ -1,5 +1,4 @@
 class RetainsController < ApplicationController
-  before_filter :normal_user?
   before_action :set_retain, only: [:show, :edit, :update, :destroy]
 
   # GET /retains

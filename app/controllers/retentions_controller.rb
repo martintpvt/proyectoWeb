@@ -1,5 +1,4 @@
 class RetentionsController < ApplicationController
-  before_filter :normal_user?
   before_action :set_retention, only: [:show, :edit, :update, :destroy]
 
   # GET /retentions

@@ -1,11 +1,10 @@
 class EntitiesController < ApplicationController
-  before_filter :normal_user?
   before_action :set_entity, only: [:show, :edit, :update, :destroy]
 
   # GET /entities
   # GET /entities.json
   def index
-    @entities = Entity.where(:Id_Usuario => session[:user_id])
+    @entities = Entity.all
   end
 
   # GET /entities/1
